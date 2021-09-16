@@ -4,4 +4,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <bean id="printer" class="org.practice.Tobi2.hello.StringPrinter"/>
+
+    <bean id="hello" class="org.practice.Tobi2.hello.Hello">
+        <property name="name" value="Spring"/>
+        <property name="printer" ref="printer"/>
+    </bean>
 </beans>

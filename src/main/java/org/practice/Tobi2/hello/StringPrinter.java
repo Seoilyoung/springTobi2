@@ -11,4 +11,8 @@ public class StringPrinter implements Printer{
     public String toString(){
         return this.buffer.toString();
     }
+
+    public void clean(){
+        this.buffer.setLength(0);
+    }
 }
